@@ -39,7 +39,7 @@ public class Connect {
       Class.forName("org.apache.phoenix.jdbc.PhoenixDriver");
       // String DBConnectionString = "jdbc:phoenix:10.125.51.86:2181:/hbase";
       // String DBConnectionString = "jdbc:phoenix:kanbox-datacraft-cloud-compute-10.et2:2181:/hbase"; // hadoop10.cloud.cm10 | hadoop9.cloud.cm10 | hadoop8.cloud.cm10
-      String DBConnectionString = "jdbc:phoenix:" + this.host + ":" + this.port +  ":/hbase";
+      String DBConnectionString = "jdbc:phoenix:" + this.host + ":" + this.port +  ":/hbase-unsecure";
       connection = DriverManager.getConnection(DBConnectionString);
     } catch (Exception e) {
       e.printStackTrace();
